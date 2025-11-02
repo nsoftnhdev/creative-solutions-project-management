@@ -133,7 +133,7 @@ const syncWorkspaceMemberCreation = inngest.createFunction(
   }
 );
 
-// Inngest function to send email on task creation
+// Inngest function to send email on task creation and update 
 const sendTaskAssignmentEmail = inngest.createFunction(
   { id: "send-task-assignment-mail" },
   { event: "app/task.assigned" },
